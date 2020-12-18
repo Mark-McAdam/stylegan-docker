@@ -131,3 +131,5 @@ dmypy.json
 
 # for Macs 
 .DS_Store
+
+/backend/models
