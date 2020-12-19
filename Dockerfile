@@ -1,6 +1,7 @@
 FROM ubuntu:19.10
 
-COPY ./api /api/api
+COPY ./backend /backend
+COPY ./frontend /frontend
 COPY requirements.txt /requirements.txt
 
 RUN apt-get update \
