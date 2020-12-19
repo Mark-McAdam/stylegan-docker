@@ -1,7 +1,14 @@
 build:
-  docker:
-    backend: ./backend/Dockerfile.web
-    frontend: ./frontend/Dockerfile.web
+    docker:
+      web: Dockerfile
 run:
-  backend: pip install -r requirements.txt
-  frontend: pip install -r requirements.txt
+    web: gunicorn -w 1 -k uvicorn.workers.UvicornWorker backend.main:app
+
+
+# build:
+#   docker:
+#     backend: ./backend/Dockerfile.web
+#     frontend: ./frontend/Dockerfile.web
+# run:
+#   backend: pip install -r requirements.txt
+#   frontend: pip install -r requirements.txt
