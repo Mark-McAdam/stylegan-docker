@@ -3,4 +3,5 @@ build:
     backend: ./backend/Dockerfile.web
     frontend: ./frontend/Dockerfile.web
 run:
-  web: bundle exec puma -C config/puma.rb
+  backend: pip install -r requirements.txt
+  frontend: pip install -r requirements.txt
