@@ -15,5 +15,6 @@ COPY . .
 
 # EXPOSE not available on heroku
 # EXPOSE 8501
+EXPOSE $PORT
 
 CMD ["streamlit", "run", "main.py"]
