@@ -1,4 +1,4 @@
-FROM ubuntu:19.10
+FROM python:3.8-slim
 
 COPY ./backend /backend
 COPY ./frontend /frontend

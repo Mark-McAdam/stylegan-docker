@@ -6,4 +6,3 @@ opencv-python
 pillow
 python-multipart
 uvicorn
-gunicorn
