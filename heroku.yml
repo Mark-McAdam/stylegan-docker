@@ -1,7 +1,7 @@
 build:
   docker:
-    web: Dockerfile
-    backend: ./backend/Dockerfile.web
+    # web: Dockerfile
+    web: ./backend/Dockerfile.web
     frontend: ./frontend/Dockerfile.web
 # run:
 #   backend: pip install -r requirements.txt
