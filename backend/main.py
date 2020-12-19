@@ -56,5 +56,5 @@ async def get_image(style: str, file: UploadFile = File(...)):
 
 
 if __name__ == "__main__":
-    #TODO change port back to 8080 for localhost
-    uvicorn.run("main:app", host="0.0.0.0", port=$PORT)
+    # TODO change port back to 8080 for localhost
+    uvicorn.run("main:app", host="0.0.0.0", port=PORT)
