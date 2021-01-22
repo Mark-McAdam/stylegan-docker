@@ -4,6 +4,10 @@ import requests
 import streamlit as st
 from PIL import Image
 
+# import requests
+
+# return requests.get(url).json()
+
 STYLES = {
     "candy": "candy",
     "composition 6": "composition_vii",
@@ -33,7 +37,7 @@ if st.button("Style Transfer"):
     if image is not None and style is not None:
         files = {"file": image.getvalue()}
         res = requests.post(f"http://backend:8080/{style}", files=files)
-        img_path = res.json()
+        img_path = res.json()  # res.json()
         image = Image.open(img_path.get("name"))
         st.image(image)
 
