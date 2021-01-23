@@ -2,12 +2,21 @@
 Style transfer application, FastAPI backend to serve predictions, Streamlit for the user interface, OpenCV for the predictions
 
 
-from root of project folder:
-$ docker-compose up -d --build
 
-This should create frontend and backend 
+Mark-McAdam/stylegan-docker
+### Style transfer web app 
 
+#### Tools used
+- FastAPI: for the API
+- streamlit : for the interface
+- Docker: to containerize the app
 
-Sometimes I think I had to start manually the backend as well. Sometimes it shut down as soon as compose was finished. 
+#### Download the models
+```bash
+./download_models.sh
+```
 
-$ docker run -p 8080:8080 backend
+#### Run
+```bash
+docker-compose up -d
+```
